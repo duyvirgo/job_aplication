@@ -1,0 +1,166 @@
+:root {
+    --button-color: #f99104;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #1b1986;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 600px;
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+#form {
+    background-color: #fff;
+    margin: 15px;
+    padding: 20px 20px;
+    border-radius: 3px;
+}
+
+.form-control {
+    margin-bottom: 25px;
+}
+
+.form-control.row1 {
+    width: 100%;
+    display: flex;
+}
+
+.form-control input,
+.form-control .row {
+    width: 100%;
+    outline: none;
+    padding: 10px 10px !important;
+    
+}
+
+#firstname,
+#email {
+    margin-right: 25px;
+}
+
+
+.form-control.row2 {
+    width: 100%;
+    display: flex;
+}
+
+
+.form-control .row {
+    width: 100%;
+    padding: 10px 2px;
+    font-size: 15px;
+    outline: none;
+}
+
+
+.form-control.file {
+    padding-bottom: 0px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.form-control.file button {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    background-color: var(--button-color);
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+    display: block;
+}
+
+.form-control select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+}
+
+#form>div:nth-child(7) {
+    margin-bottom: 20px;
+}
+
+.note {
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.btn-send .btn {
+    border: none;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+    margin: 10px 0 10px 20px;
+    border-radius: 2px;
+    background-color: var(--button-color);
+    outline: none;
+    padding: 10px 25px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.btn-send .btn:hover {
+    background-color: #1b1986;
+    border: none;
+}
+
+.btn-send {
+    display: flex;
+    justify-content: flex-end;
+}
+.form-control.file.chosse-file.row {
+    margin-bottom: 0;
+}
+.chosse-file.row .choose {
+    cursor: pointer;
+}
+
+#form > div.btn-send {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 475px) {
+    .form-control.row1,
+    .form-control.row2 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 25px 0;
+    }
+
+    #firstname, #email {
+        margin:0 0 25px 0;
+    }
+}

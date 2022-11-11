@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Job Application Form Widget</title>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Job Application Form Widget</h2>
+        <form id="form" class="form">
+            <div class="form-control row1">
+                <input type="text" name="firstname" id="firstname" required placeholder="First-name">
+                <input type="text" name="lastname" id="lastname" required placeholder="Last-name">
+            </div>
+
+            <div class="form-control row2">
+                <input type="email" name="email" id="email" required placeholder="Email">
+                <input type="tel" name="phone" id="phone" required placeholder="Phone">
+            </div>
+
+
+            <div class="form-control select-country">
+                <select name="country" id="country" required class="row">
+                    <option value="0" label="Select country" disabled="" selected="selected"></option>
+                    <option value="VN" label="Việt Nam">Việt Nam</option>
+                    <option value="PH" label="Philippines ">Philippines </option>
+                    <option value="SIN" label="Singapore">Singapore</option>
+                    <option value="LA" label="Lào">Lào</option>
+                    <option value="KH" label="Campodia">Campodia</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <label for="city" aria-required=""></label>
+                <input type="text" name="city" id="city" class="row" required placeholder="City">
+            </div>
+
+            <div class="form-control">
+                <label for="address" aria-required=""></label>
+                <input type="text" name="address" id="address" class="row" required placeholder="Address">
+            </div>
+
+            <div class="form-control select-position">
+                <select name="position" id="position" class="row">
+                    <option value="0" label="Choose desired position" disabled="" selected="selected"> </option>
+                    <option value="op" label="Operator">Operator</option>
+                    <option value="man" label="Manager ">Manager</option>
+                    <option value="dev" label="Developer">Developer</option>
+                    <option value="deg" label="Designer">Designer</option>
+                </select>
+                <i></i>
+            </div>
+
+            <div class="form-control ">
+                <textarea name="additional" class="row" id="textarea"
+                    placeholder="Additional info"></textarea>
+            </div>
+
+            <div class="form-control file chosse-file row " >
+                    <button type="" name="file1" class="choose" onchange="document.getElementById('file1_input').value = this.value">Browse</button>
+                    <input type="text" id="file1_input" readonly="" placeholder="Add your CV">
+            </div>
+            <span class="note">Only: pdf / doc Size: lessthan 1 Mb</span>
+            
+            <div class="btn-send">
+                <button type="reset" class="btn">Reset</button>
+                <button type="submit" class="btn">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
